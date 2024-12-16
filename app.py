@@ -43,8 +43,8 @@ st.markdown("""
     -webkit-text-fill-color: transparent;
     display: inline;
     font-size: 3em;
-    line-height: 1;
-    margin-bottom: 10px;
+    line-height: 0.7;
+    margin-bottom: 20px;
 }
 </style>
 <div class="gradient-text">Predict Your Disease Based on Your Symptoms!</div>
