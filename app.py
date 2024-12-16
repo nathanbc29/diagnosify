@@ -33,7 +33,15 @@ y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 
 # Streamlit App
-st.title("🦠 Predict Your Disease Based on Your Symptoms!")
+st.markdown("""
+    <h1 style='text-align: center;
+               font-size: 2.5em;
+               background: linear-gradient(to right, #FF5733, #FF8D1A);
+               -webkit-background-clip: text;
+               color: transparent;'>
+        🦠 Predict Your Disease Based on Your Symptoms!
+    </h1>
+""", unsafe_allow_html=True)
 st.write("This project is a **Disease Prediction App** built with Streamlit and powered by machine learning algorithms. It predicts potential diseases based on user-inputted symptoms and patient profiles by analyzing a dataset of symptoms and diseases. The app uses a **Random Forest Classifier** to deliver predictions, and if the system determines that the confidence is too low, it suggests seeking a healthcare professional's opinion.")
 st.subheader("Features 🚀")
 st.markdown("""
