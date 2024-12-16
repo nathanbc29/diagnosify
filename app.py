@@ -76,13 +76,11 @@ st.markdown("""
         -webkit-text-fill-color: transparent;
         font-size: 2em;
         display: inline-block;
-        margin-bottom: 10px;
     }
     .emoji {
         display: inline-block;
         font-size: 2em;
         vertical-align: middle;
-        margin-bottom: 10px;
     }
     </style>
     <div style="text-align: left;">
