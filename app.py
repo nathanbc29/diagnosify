@@ -51,7 +51,20 @@ st.markdown("""
 <br>
 """, unsafe_allow_html=True)
 
-st.write("This project is a **Disease Prediction App** built with Streamlit and powered by machine learning algorithms. It predicts potential diseases based on user-inputted symptoms and patient profiles by analyzing a dataset of symptoms and diseases. The app uses a **Random Forest Classifier** to deliver predictions, and if the system determines that the confidence is too low, it suggests seeking a healthcare professional's opinion.")
+st.markdown("""
+    <style>
+    .custom-text {
+        margin-top: 20px;
+        font-size: 1em;
+    }
+    </style>
+    <div class="custom-text">
+        This project is a <strong>Disease Prediction App</strong> built with Streamlit and powered by machine learning algorithms. 
+        It predicts potential diseases based on user-inputted symptoms and patient profiles by analyzing a dataset of symptoms and diseases. 
+        The app uses a <strong>Random Forest Classifier</strong> to deliver predictions, and if the system determines that the confidence is too low, 
+        it suggests seeking a healthcare professional's opinion.
+    </div>
+""", unsafe_allow_html=True)
 
 st.subheader("Features 🚀")
 
