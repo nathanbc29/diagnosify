@@ -34,11 +34,18 @@ accuracy = accuracy_score(y_test, y_pred)
 
 # Streamlit App
 st.markdown("""
-    <h1 style='text-align: center;
-               font-size: 2.5em;
-               background: linear-gradient(to right, #FF5733, #FF8D1A);
-               -webkit-background-clip: text;
-               color: transparent;'>
+    <style>
+    .gradient-text {
+        font-weight: bold;
+        background: -webkit-linear-gradient(left, red, orange);
+        background: linear-gradient(to right, red, orange);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline;
+        font-size: 3em;
+    }
+    </style>
+    <h1 class="gradient-text">
         🦠 Predict Your Disease Based on Your Symptoms!
     </h1>
 """, unsafe_allow_html=True)
