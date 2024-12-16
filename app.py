@@ -42,7 +42,7 @@ st.markdown("""
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         display: inline;
-        font-size: 3em;
+        font-size: 30px;
     }
     </style>
     <h1 style='text-align: center;'>
