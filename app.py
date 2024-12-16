@@ -42,12 +42,17 @@ st.markdown("""
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         display: inline;
-        font-size: 60px;
+        font-size: 2.5em;
+    }
+    .emoji {
+        display: inline;
+        font-size: 2.5em;
+        vertical-align: middle;
     }
     </style>
     <h1 style='text-align: center;'>
-        <span style='font-size: 60px;'>🦠</span>
-        <span class="gradient-text"> Predict Your Disease Based on Your Symptoms!</span>
+        <span class="emoji">🦠</span>
+        <span class="gradient-text">Predict Your Disease Based on Your Symptoms!</span>
     </h1>
 """, unsafe_allow_html=True)
 
