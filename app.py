@@ -82,5 +82,5 @@ predicted_disease = label_encoders['Disease'].inverse_transform([prediction])[0]
 
 # Display results
 st.subheader("Predicted Disease: ")
-st.markdown(f'<div style="border: 0px solid grey; background-color:rgb(39, 39, 54); padding: 10px; border-radius: 10px; font-size: 20px; font-weight: bold; text-align: center;">{predicted_disease}</div>', unsafe_allow_html=True)
+st.markdown(f'<div style="border: 0px solid grey; background-color:rgb(39, 39, 54); padding: 10px; border-radius: 20px; font-size: 20px; font-weight: bold; text-align: center;">{predicted_disease}</div>', unsafe_allow_html=True)
 
