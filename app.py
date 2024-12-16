@@ -135,6 +135,21 @@ prediction = model.predict(input_data)[0]
 predicted_disease = label_encoders['Disease'].inverse_transform([prediction])[0]
 
 # Display results
-st.subheader("Predicted Disease: ")
+st.markdown("""
+    <style>
+    .gradienttt-text {
+        font-weight: bold;
+        background: -webkit-linear-gradient(left, #A680FF, #F784BE, #FFAF70);
+        background: linear-gradient(to right, #A680FF, #F784BE, #FFAF70);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2em;
+        display: inline-block;
+    }
+    </style>
+    <div style="text-align: left;">
+        <span class="gradienttt-text">Predicted Diseases: </span>
+    </div>
+""", unsafe_allow_html=True)
 st.markdown(f'<div style="border: 0px solid grey; background-color:rgb(38, 39, 48); padding: 10px; border-radius: 15px; font-size: 20px; font-weight: bold; text-align: center;">{predicted_disease}</div>', unsafe_allow_html=True)
 
