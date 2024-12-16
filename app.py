@@ -37,8 +37,8 @@ st.markdown("""
 <style>
 .gradient-text {
     font-weight: bold;
-    background: -webkit-linear-gradient(left, red, orange);
-    background: linear-gradient(to right, red, orange);
+    background: -webkit-linear-gradient(left, #A680FF, #F784BE, #FFAF70);
+    background: linear-gradient(to right, #A680FF, #F784BE, #FFAF70);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline;
