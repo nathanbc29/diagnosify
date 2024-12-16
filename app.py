@@ -42,11 +42,11 @@ st.markdown("""
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         display: inline;
-        font-size: 2.5em;
+        font-size: 0.5em;
     }
     .emoji {
         display: inline;
-        font-size: 2.5em;
+        font-size: 0.5em;
         vertical-align: middle;
     }
     </style>
