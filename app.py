@@ -45,12 +45,15 @@ st.markdown("""
         font-size: 3em;
     }
     </style>
-    <h1 class="gradient-text">
-        🦠 Predict Your Disease Based on Your Symptoms!
+    <h1 style='text-align: center;'>
+        <span style='font-size: 3em;'>🦠</span>
+        <span class="gradient-text"> Predict Your Disease Based on Your Symptoms!</span>
     </h1>
 """, unsafe_allow_html=True)
+
 st.write("This project is a **Disease Prediction App** built with Streamlit and powered by machine learning algorithms. It predicts potential diseases based on user-inputted symptoms and patient profiles by analyzing a dataset of symptoms and diseases. The app uses a **Random Forest Classifier** to deliver predictions, and if the system determines that the confidence is too low, it suggests seeking a healthcare professional's opinion.")
 st.subheader("Features 🚀")
+
 st.markdown("""
 - **Random Forest Classifier:** Uses a Random Forest algorithm to analyze the input symptoms and predict diseases with high accuracy.
 - **Real-Time Prediction:** Instant disease prediction after entering your symptoms, ensuring quick feedback.
