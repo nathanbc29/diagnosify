@@ -54,7 +54,7 @@ st.markdown("""
 st.markdown("""
     <style>
     .custom-text {
-        margin-top: 20px;
+        margin-top: 15px;
         font-size: 1em;
     }
     </style>
