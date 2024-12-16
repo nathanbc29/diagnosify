@@ -34,8 +34,9 @@ accuracy = accuracy_score(y_test, y_pred)
 
 st.markdown("""
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
         body {
-            font-family: 'Helvetica', sans-serif;
+            font-family: 'Readex Pro', sans-serif;
         }
     </style>
 """, unsafe_allow_html=True)
