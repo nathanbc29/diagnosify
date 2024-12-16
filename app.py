@@ -55,7 +55,7 @@ st.markdown("""
 <style>
 .description {
     display: inline;
-    font-size: 48px;
+    font-size: 20px;
     margin-top: 20px;
 }
 </style>
