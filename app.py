@@ -151,5 +151,5 @@ st.markdown("""
         <span class="gradienttt-text">Predicted Disease: </span>
     </div>
 """, unsafe_allow_html=True)
-st.markdown(f'<div style="border: 0px solid grey; background-color:#0C021C; padding: 10px; border-radius: 15px; font-size: 20px; font-weight: bold; text-align: center;">{predicted_disease}</div>', unsafe_allow_html=True)
+st.markdown(f'<div style="border: 0px solid grey; background-color:rgb(19 8 36); padding: 10px; border-radius: 20px; font-size: 20px; font-weight: bold; text-align: center;">{predicted_disease}</div>', unsafe_allow_html=True)
 
