@@ -66,29 +66,7 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-st.markdown("""
-    <style>
-    .gradient-text {
-        font-weight: bold;
-        background: -webkit-linear-gradient(left, #A680FF, #F784BE, #FFAF70);
-        background: linear-gradient(to right, #A680FF, #F784BE, #FFAF70);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 1em;
-        display: inline-block;
-        margin-bottom: 10px;
-    }
-    .emoji {
-        display: inline-block;
-        font-size: 2em;
-        vertical-align: middle;
-    }
-    </style>
-    <div style="text-align: left;">
-        <span class="gradient-text">Features</span>
-        <span class="emoji">🚀</span>
-    </div>
-""", unsafe_allow_html=True)
+st.subheader("Features 🚀")
 
 st.markdown("""
 - **Random Forest Classifier:** Uses a Random Forest algorithm to analyze the input symptoms and predict diseases with high accuracy.
