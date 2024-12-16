@@ -32,6 +32,14 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 
+st.markdown("""
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 # Streamlit App
 st.markdown("""
 <style>
