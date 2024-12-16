@@ -82,6 +82,7 @@ st.markdown("""
         display: inline-block;
         font-size: 2em;
         vertical-align: middle;
+        margin-bottom: 10px;
     }
     </style>
     <div style="text-align: left;">
