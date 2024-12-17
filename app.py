@@ -1,3 +1,4 @@
+#import library
 import pandas as pd
 import streamlit as st
 from sklearn.model_selection import train_test_split
@@ -5,11 +6,11 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score, classification_report
 
-# Load dataset
+#load dataset
 file_path = 'Disease_symptom_and_patient_profile_dataset.csv'
 data = pd.read_csv(file_path)
 
-# Preprocessing: Convert categorical variables to numerical values
+#merubah variabel kategori menjadi nilai numeric
 label_encoders = {}
 for column in data.columns:
     if data[column].dtype == 'object':
@@ -17,18 +18,18 @@ for column in data.columns:
         data[column] = le.fit_transform(data[column])
         label_encoders[column] = le
 
-# Features and target
+#memisahkan fitur (features) dan target (label)
 X = data.drop(['Disease'], axis=1)
 y = data['Disease']
 
-# Split data into training and testing sets
+#membagi data menjadi data pelatihan dan pengujian
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Train a Random Forest Classifier
+#melatih model Random Forest Classifier
 model = RandomForestClassifier(random_state=42)
 model.fit(X_train, y_train)
 
-# Evaluate the model
+#mengevaluasi model
 y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 
@@ -41,7 +42,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Streamlit App
 st.markdown("""
 <style>
 .gradient-text {
@@ -108,6 +108,7 @@ st.markdown("""
 
 st.sidebar.header("Input Patient Data")
 
+#user input
 def user_input_features():
     fever = st.sidebar.selectbox('Fever', ['Yes', 'No'])
     cough = st.sidebar.selectbox('Cough', ['Yes', 'No'])
@@ -134,16 +135,16 @@ def user_input_features():
 
 input_data = user_input_features()
 
-# Preprocess the input data
+#pra-pemrosesan data yang diinput user
 for column in input_data.columns:
     if column in label_encoders:
         input_data[column] = label_encoders[column].transform(input_data[column])
 
-# Prediction
+#prediksi
 prediction = model.predict(input_data)[0]
 predicted_disease = label_encoders['Disease'].inverse_transform([prediction])[0]
 
-# Display results
+#hasil
 st.markdown("""
     <style>
     .gradienttt-text {
