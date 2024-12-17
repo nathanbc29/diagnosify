@@ -33,6 +33,15 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 
+
+#streamlit
+st.set_page_config(
+    page_title="diagnosify",  
+    page_icon="🩺",                      
+    layout="centered",                   
+    initial_sidebar_state="expanded" 
+)
+
 st.markdown("""
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
